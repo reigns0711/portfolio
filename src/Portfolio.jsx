@@ -25,6 +25,7 @@ export default function Portfolio() {
   const skills = [
     "React",
     "Redux",
+    "Redux.js Toolkit",
     "HTML",
     "CSS",
     "JavaScript",
@@ -318,22 +319,38 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Education</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
-              <h3 className="text-2xl font-semibold text-cyan-400 mb-2">
-                B.E. (ECE)
-              </h3>
-              <p className="text-xl text-slate-300 mb-2">
-                Jeppair Maamallan Institute of Technology
-              </p>
-              <p className="text-slate-400">08/2012 - 05/2016</p>
-            </div>
-            <div className="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
-              <h3 className="text-2xl font-semibold text-cyan-400 mb-2">HSC</h3>
-              <p className="text-xl text-slate-300 mb-2">
-                Anderson Matriculation Higher Secondary School
-              </p>
-              <p className="text-slate-400">01/2011 - 05/2012</p>
-            </div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+              href="https://maps.app.goo.gl/QJnJDV4XhCHCffdK7"
+            >
+              <div className="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                <h3 className="text-2xl font-semibold text-cyan-400 mb-2">
+                  B.E. (ECE)
+                </h3>
+                <p className="text-xl text-slate-300 mb-2">
+                  Jeppair Maamallan Institute of Technology
+                </p>
+                <p className="text-slate-400">08/2012 - 05/2016</p>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+              href="https://maps.app.goo.gl/bV6EiCGanUMPzidF9"
+            >
+              <div className="bg-slate-800/50 p-8 rounded-xl border border-slate-700">
+                <h3 className="text-2xl font-semibold text-cyan-400 mb-2">
+                  HSC
+                </h3>
+                <p className="text-xl text-slate-300 mb-2">
+                  Anderson Matriculation Higher Secondary School
+                </p>
+                <p className="text-slate-400">01/2011 - 05/2012</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -365,10 +382,17 @@ export default function Portfolio() {
               <Phone size={32} />
               <div className="text-sm">+91 805 674 6202</div>
             </a>
-            <div className="bg-slate-700 p-6 rounded-xl flex flex-col items-center gap-3">
-              <MapPin size={32} />
-              <div className="text-sm">Kanchipuram, Tamil Nadu</div>
-            </div>
+            <a
+              href="https://www.google.com/maps/place/Kanchipuram,+Tamil+Nadu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <div className="bg-slate-700 p-6 rounded-xl flex flex-col items-center gap-3 hover:bg-slate-600 transition-colors cursor-pointer">
+                <MapPin size={32} />
+                <div className="text-sm">Kanchipuram, Tamil Nadu</div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
